@@ -12,10 +12,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
   <body>
-    <header class="header">
+    <header>
         <div>
           <a href=""><h4>FESTA JUNINA</h4></a>
         </div>
@@ -37,10 +37,7 @@
 <img src="./images/Date.svg" alt="data"> 
               <h1>Festa <br/> Junina </h1>
               <p>
-              As Festas Juninas são comemorações que <br/>
-              acontecem no mês de junho no Brasil. Os três <br/>
-              santos populares lembrados são: Santo <br/>
-              Antônio, São Pedro e São João.
+              As Festas Juninas são comemorações que <br/> acontecem no mês de junho no Brasil. Os três <br/> santos populares lembrados são: Santo <br/>Antônio, São Pedro e São João.
             </p>
           </div>
           <div>
@@ -51,68 +48,68 @@
       </section>
       <section class="second-section">
         <div>
-        <h2 >Eventos & Exibições</h2>
+        <h2 >Eventos <span>&</span> <br> Exibições</h2>
       </div>
+      <div class="second-section-frames">
+      <div class="frame1">
           <img src="./images/Frame1.svg" alt="concerto">
      <p>Junho 15</p>
      <h3>Imagine <br/> Dragons </h3>
     </div>
-    <div>
+    <div class="frames2">
       <ul>
-        <li>
+        <li class="frame2-1">
           <h4> Festival<span><img src="./images/Frame2.svg" alt="conhecer"></span> </h4>
           <p>Junho 15</p>
       </li>
-      <li>
+      <li class="frame2-2">
         <h4> Festival<span><img src="./images/Frame2.svg" alt="conhecer"></span> </h4>
         <p>Junho 15</p>
     </li>
-    <li>
-      <h4> Festival<span><img src="./images/Frame2.svg" alt="conhecer"></span> </h4>
+    <li class="frame2-1">
+      <h4> Festival<span><img src="./images/Frame2.svg" alt="conhecer"></span> </h2>
       <p>Junho 15</p>
   </li>
     </ul>
     </div>
-<div>
-  <ul>
-  <li>
+<div class="frame3">
   <img src="./images/Frame3.svg" alt="jogos">
   <p>June 15</p>
   <h3>Eventos <br/> para familias </h3>
-</li>
-<li>
+</div>
+<div class="frame4">
   <img src="./images/Frame3.svg" alt="jogos">
   <p>June 15</p>
   <h3>Eventos <br/> para familias </h3>
-</li>
-</ul>
+</div>
 </div>
       </section>
   <section class="third-section">
-    <div></div>
-    <ul>
-      <li>
-
-    </li>
-  </ul>
-  <div>
-    <h1>Ingressos<span><p>200 R$</p></span> </h1>
-    <h3>Adultos<span><img src="./images/Minuspreto.svg" alt="menos"><h2>1</h2><img src="./images/Plus.svg" alt="mais"></span></h3>
+  <div class="third-section-prices">
+    <h1>Ingressos<span>200 R$</span> </h1>
+    <h3>Adultos<img class="img" src="./images/Minuspreto.svg" alt="menos"><span>1</span><img src="./images/Plus.svg" alt="mais"></h3>
     <p>2000 ₽ • mais de 12 anos</p>
-    <h3>Crianças<span><img src="./images/Minuscinza.svg" alt="menos"><h2>0</h2><img src="./images/Plus.svg" alt="mais"></span></h3>
+    <h3>Crianças<img class="img" src="./images/Minuscinza.svg" alt="menos"><span>0</span><img src="./images/Plus.svg" alt="mais"></h3>
     <p>1200 • de 2 até 12 anos</p>
-    <h3>Bebês<span><img src="./images/Minuscinza.svg" alt="menos"><h2>0</h2><img src="./images/Plus.svg" alt="mais"></span></h3>
+    <h3>Bebês<img class="img" src="./images/Minuscinza.svg" alt="menos"><span>0</span><img src="./images/Plus.svg" alt="mais"></h3>
     <p>gratis • até 2 anos</p>
   </div>
   <form class="third-section_form">
-    <input class="form-name" type="text" id="name" placeholder="Número do cartão" required />
-    <input class="form-name" type="text" id="name" placeholder="Mês / Ano" required />
-    <input class="form-name" type="text" id="name" placeholder="CVV" required />
-    <input class="form-name" type="text" id="name" placeholder="Titular do cartão" required />
-    <button type="submit" class="form-button">Finalizar compra</button>
+    <div>
+    <input class="form-name1" type="text" id="name" placeholder="Número do cartão" required />
+  </div>
+  <div>
+    <input class="form-name2" type="text" id="name" placeholder="Mês / Ano" required />
+<input class="form-name3" type="text" id="name" placeholder="CVV" required />
+  </div>
+  <div>
+    <input class="form-name4" type="text" id="name" placeholder="Titular do cartão" required />
+  </div>
+    <button class="form-button" type="submit" class="form-button">Finalizar compra</button>
   </form>
+  </section>
     </main>
-    <footer class="footer">
+    <footer>
         <p>DESIGNED BY <img src="./images/Mentorama.svg" /></p>
     </footer>
   </body>
