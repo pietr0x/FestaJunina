@@ -15,10 +15,9 @@ a {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
-  margin: 32px 83.33px 32px 54px
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 80px 32px 80px
 }
 
 header a h4 {
@@ -39,7 +38,7 @@ header h5 {
   white-space: nowrap;
 }
 
-header h5:last-child {
+header h5:hover {
   color: red;
 }
 
@@ -49,15 +48,10 @@ header img {
   padding: 0px 26.67px 0px 0px;
 }
 
-header div a img:first-child {
-  padding-left: 50px;
-  }
-
 .first-section {
   display: grid;
-  gap: 278px;
 grid-template-columns: 1fr 1fr;
-  margin: 120px 0px 180px 80px;
+  margin: 120px 80px 180px 80px;
 }
 
 .first-section h1 {
@@ -78,18 +72,25 @@ white-space: nowrap;
 line-height: 36px;
 }
 
+.button-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr;
+  grid-template-areas: "overlap";
+}
+
+.first-section img {
+  margin-top: 80px;
+  grid-area: overlap;
+  justify-self: flex-end;
+}
+
 .first-section button  {
   border: transparent;
   outline: transparent;
   background-color: transparent;
   cursor: pointer;
-position: relative;
-top: 30px;
-right: 100px;
-}
-
-.first-section img {
-  margin-top: 80px;
+grid-area: overlap;
 }
 
 .second-section h2 {
@@ -107,148 +108,45 @@ right: 100px;
 }
 
 .second-section-frames{
-    display: grid;
-  grid-template-columns: 1fr 1fr;  
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 32px;
+margin: 80px 80px 180px 80px;
+grid-template-areas: "img1 img2"
+                      "img1 img3"
+                      "img1 img4"
+                      "img5 img6";
 }
 
 .frame1 {
-  background-image: url("../images/ImagineDragons.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 80px 32px 0px 80px;
+  grid-area: img1;
+ border: 2px solid red;
 }
 
-.frame1 img {
-padding: 40px 700px 294px 40px;
-}
-
-.frame1 p {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
-  color: #FFFFFF;
-  padding: 0px 0px 16px 40px;
-  }
-
-.frame1 h3 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
-color: #FFFFFF;
-padding: 16px 0px 60px 40px;
-}
-
-.frames2 {
-  margin: 80px 80px 0px 0px;
-}
-
-.frame2-1 {
-  background-image: url("../images/Rectangle\ 181.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.frame2-2 {
-  background-image: url("../images/Rectangle\ 182.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.frame2-3 {
-  background-image: url("../images/Rectangle\ 183.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.frames2 h4 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  color: white;
-  padding: 24px 24px 54px 24px;
-}
-
-
-.frames2 h4 span {
-  padding: 0px 0px 0px 500px;
-}
-
-.frames2 p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  color: white;
-  padding: 54px 0px 50px 24px;
-margin-bottom: 32px;
+.frame2 {
+  grid-area: img2;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .frame3 {
-  background-image: url("../images/Rectangle\ 212.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 32px 32px 180px 80px;
+  grid-area: img3;
+  border: 2px solid rgb(238, 255, 0);
 }
-
-.frame3 img {
-  padding: 40px 579px 200px 40px;
-}
-
-.frame3 p {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-    color: #FFFFFF;
-    padding: 0px 0px 16px 40px;
-  }
-
-  .frame3 h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-  color: #FFFFFF;
-  padding: 16px 0px 60px 40px;
-  }
 
 .frame4 {
-  background-image: url("../images/Rectangle\ 211.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 32px 80px 180px 0px;
-
+  grid-area: img4;
+  border: 2px solid rgb(234, 0, 255);
 }
 
-.frame4 img {
-  padding: 40px 579px 200px 40px;
+.frame5 {
+  grid-area: img5;
+  border: 2px solid rgb(0, 255, 136);
 }
 
-.frame4 p {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-    color: #FFFFFF;
-    padding: 0px 0px 16px 40px;
-  }
-
-  .frame4 h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-  color: #FFFFFF;
-  padding: 16px 0px 60px 40px;
-  }
+.frame6 {
+  grid-area: img6;
+  border: 2px solid rgb(0, 81, 255);
+}
 
 .third-section {
   display: grid;
