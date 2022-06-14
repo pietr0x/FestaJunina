@@ -36,6 +36,7 @@ header h5 {
   color: #1F1F1F;
   padding: 0px 27px 0px 0px;
   white-space: nowrap;
+
 }
 
 header h5:hover {
@@ -45,7 +46,7 @@ header h5:hover {
 header img {
   display: inline;
   flex-direction: row;
-  padding: 0px 26.67px 0px 0px;
+  padding: 0px 0px 0px 27px;
 }
 
 .first-section {
@@ -81,8 +82,9 @@ line-height: 36px;
 
 .first-section img {
   margin-top: 80px;
-  grid-area: overlap;
+  grid-area: overlap; 
   justify-self: flex-end;
+ 
 }
 
 .first-section button  {
@@ -91,6 +93,12 @@ line-height: 36px;
   background-color: transparent;
   cursor: pointer;
 grid-area: overlap;
+flex-direction: column;
+align-items: bottom;
+justify-self: center;
+margin-top:-61px;
+margin-right:70px;
+
 }
 
 .second-section h2 {
@@ -378,7 +386,7 @@ padding: 41px 0px 8px 56px;
 }
 
 .img3 {
-  padding-left: 307px;
+  padding-left: 308px;
 }
 
 .third-section p {
