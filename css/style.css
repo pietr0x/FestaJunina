@@ -1137,17 +1137,6 @@ margin-bottom: 40px;
   
   }
 
-.designedby {
-  width: 100px;
-  height: 28px;
-}
-
-.mentorama {
-  padding-top: 5.5px;
-  width: 116.29px;
-  height: 14px;
-}
-
 .modal[open] {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.eot");
